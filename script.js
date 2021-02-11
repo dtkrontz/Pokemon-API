@@ -59,7 +59,7 @@ function displayResults(poke) {
     // }
     sectionOne.innerHTML = 'Your Pokemon:' + ' ' + poke.name[0].toUpperCase() + poke.name.substring(1) + '<br>' + ' ' + 'ID:' + ' ' + poke.id;
     if (poke.types.length == 2) {
-        sectionTwo.innerHTML = 'Type:' + ' ' + poke.types[0].type.name + '/' + poke.types[1].type.name;
+        sectionTwo.innerHTML = 'Type:' + ' ' + poke.types[0].type.name[0].toUppercase() + poke.types[0].type.name.substring(1)+ '/' + poke.types[1].type.name;
     } else {
         sectionTwo.innerHTML = 'Type:' + ' ' + poke.types[0].type.name;
     }
